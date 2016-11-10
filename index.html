@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoList</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="top-box">
+		<div class="top">
+		<form action="javascript:postaction()" id="form">
+			<div class="logo">ToDoList</div>
+			<input type="text" id="title" name="title" placeholder="添加ToDo" required="required" autocomplete="off" />
+		</form>
+		</div>
+	</div>
+	<div class="content">
+		<h3 onclick="save()">正在进行<span id="todocount"></span></h3>
+		<ol id="todolist" class="demo-box">
+		</ol>
+		<h3>已经完成<span id="donecount"></span></h3>
+		<ul id="donelist">
+		</ul>
+	</div>
+</body>
+</html>
